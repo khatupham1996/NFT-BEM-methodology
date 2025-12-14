@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+}
+.card {
+  max-width: 24rem;
+  width: 100%;
+  background-color: #1e293b;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.card__image {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.card__img-main {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  display: block;
+}
+.card__view-icon {
+  opacity: 0;
+}
+
+.card__view {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+/* card content */
+.card__content {
+  padding-bottom: 1.5rem;
+}
+
+.card__header {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+.card__desc {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+/* Stats */
+.card__stats {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1.5rem;
+}
+.card__stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card__stat-value {
+  color: #22d3ee;
+  font-weight: 600;
+}
+
+/* divider */
+.card__divider {
+  /* border-top-width: 1px; */
+  border-top: solid;
+  border-color: #334155;
+  padding-top: 1rem;
+}
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.card__author-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.card__author-text {
+  color: #94a3b8;
+}
+.card__author-name {
+  color: white;
+}
